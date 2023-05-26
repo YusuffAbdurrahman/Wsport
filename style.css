@@ -27,6 +27,10 @@ body {
   box-shadow: 0 1px 4px hsl(0 4% 15% / 10%);
 }
 
+#bar {
+  display: none;
+}
+
 .navbar-list a {
   font-size: 0.9rem;
   margin-left: 1.2rem;
@@ -62,9 +66,44 @@ body {
 }
 
 .hero-content h1 {
-  font-size: 8rem;
+  font-size: 7rem;
   position: absolute;
   bottom: 50%;
   z-index: -1;
 }
 /* HERO-END */
+
+@media (max-width: 768px) {
+  html {
+    font-size: 90%;
+  }
+  .navbar-list {
+    position: absolute;
+    height: 100vh;
+    top: 100%;
+    right: -100%;
+    width: 45%;
+    background-color: rgb(255, 255, 255);
+    transition: all .55s ease;
+    border-left: 1px solid hsl(0 4% 15% / 10%);
+  }
+
+  .navbar-list a {
+    display: block;
+    margin: 1.8rem;
+  }
+
+  .navbar-list.active {
+    right: 0;
+  }
+  #bar {
+    display: inline-block;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 85%;
+  }
+}

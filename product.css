@@ -28,9 +28,12 @@ body {
   background-color: #fff;
 }
 
+#bar {
+  display: none;
+}
+
 .navbar i {
   cursor: pointer;
-  margin-left: 1rem;
 }
 
 .navbar-cart a {
@@ -109,3 +112,39 @@ body {
   margin: 5px 0 5px 5px;
 }
 /* PRODUCT-END */
+
+
+@media (max-width: 768px) {
+  html {
+    font-size: 90%;
+  }
+  .navbar-list {
+    position: absolute;
+    height: 100vh;
+    top: 100%;
+    right: -100%;
+    width: 45%;
+    background-color: rgb(255, 255, 255);
+    transition: all .55s ease;  
+    border-left: 1px solid hsl(0 4% 15% / 10%);
+  }
+
+  .navbar-list a {
+    display: block;
+    margin: 1.8rem;
+  }
+
+  .navbar-list.active {
+    right: 0;
+  }
+  #bar {
+    display: inline-block;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 85%;
+  }
+}
