@@ -1,0 +1,95 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* NAVBAR-START */
+.navbar {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3.7rem;
+  box-shadow: 0 1px 4px hsl(0 4% 15% / 10%);
+  background-color: #fff;
+}
+
+.navbar i {
+  cursor: pointer;
+}
+
+.navbar-cart a {
+  color: #000;
+}
+
+.navbar-list a {
+  font-size: 0.9rem;
+  margin-left: 1.2rem;
+  letter-spacing: 0.5px;
+  color: #000;
+}
+/* NAVBAR-END */
+
+/* CONTACT-START */
+.sign {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url(bg-contact.jpg); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sign-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: rgb(91, 91, 91);
+  border: 1px solid #fff;
+  padding: 5rem 4rem;
+  border-radius: 1rem;
+}
+
+.sign-container h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.sign-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-field input {
+  margin: 0.8rem 0;
+  height: 2rem;
+  border: none;
+  padding: 0 0.8rem;
+  border-radius: 1.5rem;
+}
+
+.next button {
+  border: none;
+  background-color: #fff;
+  padding: 0.3rem 0.8rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+/* CONTACT-END */
